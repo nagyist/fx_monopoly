@@ -9,7 +9,24 @@ public class Property
 	private boolean buildable;
 	private Color color;
 	
-	public Property(){}
+	public Property(String name, int value, int rent, Color color){
+		this.name = name;
+		this.value = value;
+		this.rent = rent;
+		this.color = color;
+		
+		buildable = false;
+		player = null;
+	}
+	
+	public Property(String name, int value, int rent){
+		this.name = name;
+		this.value = value;
+		this.rent = rent;
+		
+		buildable = false;
+		player = null;
+	}
 	
 	public String getName()
 	{

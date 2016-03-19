@@ -6,12 +6,20 @@ public class GameMenu extends Pane
 {
 	private boolean paused;
 	
-	public void pause(){}
+	// Pause the game, by dragging the menu towards the user.
+	public void pause(){
+		paused=true;
+		this.toFront();
+	}
 	
-	public void resume(){}
-	
-	public void exitToMainMenu(){}
-	
-	public void exitGame(){}
+	// Resume the game, by dragging the menu away from the user.
+	public void resume(){
+		paused=false;
+		this.toBack();
+	}
+		
+	public void exitGame(){
+		System.exit(0);
+	}
 
 }

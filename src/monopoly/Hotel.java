@@ -4,9 +4,9 @@ public final class Hotel extends Building
 {
 	boolean buildable = false;
 	
-	public Hotel()
+	public Hotel(Property property)
 	{
-		super();
+		super("Hotell", property);
 	}
 
 }
