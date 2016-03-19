@@ -3,9 +3,9 @@ package monopoly;
 public final class House extends Building
 {
 	
-	public House()
+	public House(Property property)
 	{
-		super();
+		super("House", property);
 	}
 	
 	
